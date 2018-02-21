@@ -1,0 +1,19 @@
+current directory: /Users/saitomie/mie/WeddingProject-2018/vendor/bundle/gems/byebug-10.0.0/ext/byebug
+/Users/saitomie/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20180221-2134-1y0pc22.rb extconf.rb
+creating Makefile
+
+current directory: /Users/saitomie/mie/WeddingProject-2018/vendor/bundle/gems/byebug-10.0.0/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/saitomie/mie/WeddingProject-2018/vendor/bundle/gems/byebug-10.0.0/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/saitomie/mie/WeddingProject-2018/vendor/bundle/gems/byebug-10.0.0/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20180221-2134-1wftfyb/byebug

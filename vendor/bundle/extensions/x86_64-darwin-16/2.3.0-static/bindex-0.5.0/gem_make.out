@@ -1,0 +1,15 @@
+current directory: /Users/saitomie/mie/WeddingProject-2018/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+/Users/saitomie/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20180221-2134-1wlzrsg.rb extconf.rb
+creating Makefile
+
+current directory: /Users/saitomie/mie/WeddingProject-2018/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/saitomie/mie/WeddingProject-2018/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/saitomie/mie/WeddingProject-2018/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20180221-2134-1j3vsyu/bindex
