@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{ name:'viewport', content:'width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'}
+    %title Wedding
+    = csrf_meta_tags
+    = stylesheet_link_tag 'user/application', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag 'user/pc', media: 'screen and (min-width: 769px)', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag 'user/tablet', media: 'screen and (min-width: 768px) and (min-width: 641px)', 'data-turbolinks-track': 'reload'
+    = styleshhet_link_tag 'user/sp', media: 'screen and (min-width: 640px) and (min-width: 0px)', 'data-turbolinks-track': 'reload'
+    -#= javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    %body
+      = yield
