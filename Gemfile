@@ -56,3 +56,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'erb2haml' #haml変換
 gem 'haml-rails' #haml用
+gem 'jquery-rails'
+gem 'jquery-turbolinks'
