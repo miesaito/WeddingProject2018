@@ -11,4 +11,10 @@
     = stylesheet_link_tag 'user/sp', media: 'screen and (max-width: 640px) and (min-width: 0px)', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'user/application', 'data-turbolinks-track': 'reload'
     %body
-      = yield
+      .container
+        = render 'common/header'
+        %main.content
+          = yield
+        = render 'common/footer'
+
+

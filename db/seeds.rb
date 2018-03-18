@@ -1,3 +1,6 @@
+Attending.create(status: 'ご出席', created_at: '2018-03-17', updated_at: '2018-03-17')
+Attending.create(status: 'ご欠席', created_at: '2018-03-17', updated_at: '2018-03-17')
+
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
