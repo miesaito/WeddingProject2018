@@ -5,15 +5,12 @@ class User::WeddingController < User::ApplicationController
   end
 
   def update
-    if @personal.update(wedding_params)
-    else
-      render action: :index
-    end
+    @personal = Wedding.create(wedding_params)
   end
 
 
   private
   def wedding_params
-    params.require(:wedding).permit(:user_id, :name, :postal_code, :address, :phone_number, :mail_adress, :allergy, :message, :attending)
+    params.require(:wedding).permit(:name, :postal_code, :address, :phone_number, :mail_adress, :allergy, :message, :attending)
   end
 end

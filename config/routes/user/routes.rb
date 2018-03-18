@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  root 'user/wedding#index'
+  root 'participations#index'
   scope module: :user do
-    resources :wedding, only: :index
-    post 'wedding/:id' => 'wedding#update'
+    resources :wedding
   end
+  resources :participations
 end

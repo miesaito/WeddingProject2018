@@ -45,7 +45,7 @@
       03-6419-4181
 
   .intivation__form
-    = form_for @personal, url: {action: 'create'} do |f|
+    = form_for @participation, url: {action: 'create'} do |f|
       .intivation__form-box
         %p お名前
         = f.text_field :name, class: ""
@@ -56,14 +56,11 @@
         %p 電話番号
         = f.number_field :phone_number, class: ""
         %p メールアドレス
-        = f.email_field :mail_adress, class: ""
+        = f.email_field :mail_address, class: ""
         %p アレルギー
         = f.text_area :allergy, class: ""
         %p メッセージ
         = f.text_field :message, class: ""
         %p ご出席 *
-        = f.collection_select :attending, Attending.all, :id, :status, include_blank: "選択してください ▼"
+        =select_tag 'participation[attending]', options_for_select([["参加する", "going"], ["参加しない", "notgoing"]], "going")
         = f.submit "送信する", id: "button", class: "btn"
-
-
-
