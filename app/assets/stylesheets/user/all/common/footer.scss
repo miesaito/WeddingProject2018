@@ -1,0 +1,27 @@
+.footer {
+  width: 100%;
+  z-index: 9999;
+  background-color: #999;
+  padding: 15px 0;
+  text-align: center;
+  //position: fixed;
+  //bottom: 0px;
+  &__list {
+    list-style: none;
+  }
+  &__itme {
+    display: inline-block;
+    line-height: 22px;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+  }
+  &__copyright {
+    text-align: center;
+    margin-top: 5px;
+  }
+}

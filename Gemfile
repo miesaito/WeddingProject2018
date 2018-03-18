@@ -58,3 +58,4 @@ gem 'erb2haml' #haml変換
 gem 'haml-rails' #haml用
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
+gem 'rake', '< 11.0'

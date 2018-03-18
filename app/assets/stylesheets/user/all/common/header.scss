@@ -1,0 +1,18 @@
+.header {
+  height: 60px;
+  background-color: #FFC0CB;
+  z-index: 9999;
+  width: 100%;
+  position: fixed;
+  &__inner {
+    padding: 17px 0;
+    position: relative;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+    h1 {
+      color: #65451f;
+      font-size: 2.4rem;
+      text-align: center;
+      opacity: 0.75;
+    }
+  }
+}

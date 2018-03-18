@@ -1,0 +1,69 @@
+.intivation
+  .intivation__first
+    .intivation__first-top
+      = image_tag 'index01.png', class: 'intivation__first-image'
+      .intivation__first-title.u-mb-10
+        %p.u-mb-10 WE ARE GETTING MARRIED !
+        %span Saito Daito & Kagesawa Mie
+    .intivation__first-bottom
+      %p.intivation__first-bottom-text.u-mb-20
+        この度、結婚式を執り行うこととなりました。
+        %br
+        %br
+        日頃お世話になっておりますみなさまに私どもの門出をお見守りいただきたく、ささやかながら小宴をもうけさせていただきました。
+        ご多用中誠に恐縮ではございますがぜひご出席いただきたくご案内申し上げます。
+        %br
+      %p.intivation__first-bottom-name
+        齋藤大斗 影澤美恵
+  .intivation__profile
+    .intivation__profile-area
+      %p.intivation__profile-area.intivation__profile-area__icon
+        = image_tag 'man.png', class: 'intivation__profile-image'
+      %p.u-mt-10 Saito Daito
+    .intivation__profile-area.u-mb-20
+      %p.intivation__profile-area.intivation__profile-area__icon
+        = image_tag 'female.png', class: 'intivation__profile-image'
+      %p.u-mt-10 Kagesawa Mie
+      %br
+      %br
+
+  .intivation__reception
+    %h1 INFORMATION
+    %br
+    %p.intivation__reception-title.u-mb-8 Date
+    %p.intivation__reception-text
+      2018年5月26日(土)
+      %br
+      受付：12時30分〜
+    %br
+    %p.intivation__reception-title.u-mb-8 Place
+    %p.intivation__reception-text
+      レストラン BENOIT(ブノワ)
+      %br
+      〒150-0001 東京都渋谷区神宮前5−51−8 ラ・ポルト青山10階
+      %br
+      03-6419-4181
+
+  .intivation__form
+  = form_for @personal, :url => {:index => :update} do |f|
+    .intivation__form-box
+      %p お名前
+      = f.text_field :name, class: ""
+      %p 郵便番号
+      = f.number_field :postal_code, class: ""
+      %p ご住所
+      = f.text_field :address, class: ""
+      %p 電話番号
+      = f.number_field :phone_number, class: ""
+      %p メールアドレス
+      = f.email_field :mail_adress, class: ""
+      %p アレルギー
+      = f.text_area :allergy, class: ""
+      %p メッセージ
+      = f.text_field :message, class: ""
+      %p ご出席 *
+      = f.collection_select :attending, Attending.all, :id, :status, include_blank: "選択してください ▼"
+      = f.submit "送信する", id: "button", class: "btn"
+
+
+
